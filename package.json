@@ -1,0 +1,23 @@
+{
+  "name": "dsaproj3",
+  "version": "1.0.0",
+  "description": "my first node.js project with medium article runthrough",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "rebuild:dev": "node-gyp -j 16 rebuild --debug",
+    "rebuild": "node-gyp -j 16 rebuild"
+  },
+  "gypfile": true,
+  "author": "Jorge L. Alberto",
+  "license": "ISC",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "express": "^4.18.2",
+    "node-addon-api": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
