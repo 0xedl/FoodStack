@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Food Stack">
+        <meta name="author" content="Jorge L. Alberto">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Food Stack</title>
+        <link rel="stylesheet" href="/CSS/styles.css" />
+        <link rel="stylesheet" href="/CSS/navbar.css">
+        <script src="/JS/navbar.js" defer></script>
+        <script src="/JS/searchMod.js" defer></script>
+        <script src="/JS/talkToServer.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body class="colorOfPage">
+        <header class="mainHeader">
+            <nav class="navbar">
+                <div class="brand-title">Food Stack</div>
+                <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                  <ul>
+                    <li><a href="/homePage">HOME PAGE</a></li>
+                    <li><a href="/aboutUs">ABOUT US</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        <section>
+          <h3 class="resourceGroupName">Welcome</h3>
+            <div id="block">
+              <div class="dropdown">
+                <button onclick="dropdown('myDropdown')" class="dropbtn">Enter Ingredient</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="searchIngredients(this)">
+                  <small>
+                  <section id="searchResults">
+                    
+                  </section>
+                  </small>
+                </div>
+              </div>
+              
+              <div class="Meal" class="Meal1">
+                <h2 class="Title">Meals</h2>
+                <a onclick="dropdown('ingredientList1Drop');showMealMacros(this)">Meal 1</a>
+                <div id="ingredientList1Drop" class="dropdown-content">
+                  <small>
+                    <section id="ingredientList1">
+                      
+                    </section>
+                  </small>
+                </div>
+                <a onclick="dropdown('ingredientList2Drop');showMealMacros(this)">Meal 2</a>
+                <div id="ingredientList2Drop" class="dropdown-content">
+                  <small>
+                    <section id="ingredientList2">
+                      
+                    </section>
+                  </small>
+                </div>
+                <a onclick="dropdown('ingredientList3Drop');showMealMacros(this)">Meal 3</a>
+                <div id="ingredientList3Drop" class="dropdown-content">
+                  <small>
+                    <section id="ingredientList3">
+                      
+                    </section>
+                  </small>
+                </div>
+                <a onclick="dropdown('ingredientList4Drop');showMealMacros(this)">Meal 4</a>
+                <div id="ingredientList4Drop" class="dropdown-content">
+                  <small>
+                    <section id="ingredientList4">
+                      
+                    </section>
+                  </small>
+                </div>
+                <a onclick="dropdown('ingredientList5Drop');showMealMacros(this)">Meal 5</a>
+                <div id="ingredientList5Drop" class="dropdown-content">
+                  <small>
+                    <section id="ingredientList5">
+                      
+                    </section>
+                  </small>
+                </div>
+                <a onclick="dropdown('ingredientList6Drop');showMealMacros(this)">Meal 6</a>
+                <div id="ingredientList6Drop" class="dropdown-content">
+                  <small>
+                    <section id="ingredientList6">
+                      
+                    </section>
+                  </small>
+                </div>
+                <div id="ingredientList6Drop" class="dropdown-content">
+                  <small>
+                    <section id="ingredientList6">
+                      
+                    </section>
+                  </small>
+                </div>
+              </div>
+              <div class="Meal">
+                <h2 class="Title">Macros</h2>
+                <div id="" class="MealIngredients">
+                  <small>
+                    <section id="ingredientInfo">
+
+                    </section>
+                  </small>
+                </div>
+              </div>
+              <div class="Meal">
+                <h2 class="Title">Algorithms</h2>
+                <div id="" class="MealIngredients">
+                  <small>
+                    <section id="algoInfo">
+
+                    </section>
+                  </small>
+                </div>
+              </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
